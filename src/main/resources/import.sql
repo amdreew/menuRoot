@@ -1,0 +1,1 @@
+INSERT INTO APLICATIVOS_MENU_RAIZ (codigo_producto, nombre_producto, url, estado, fecha_creacion, fecha_actualizacion, usuario_creacion, usuario_actualizacion) VALUES ('0001', 'test', 'http://test.com', 'A', NOW(), NOW(), 'test', 'test');

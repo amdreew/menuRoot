@@ -1,0 +1,11 @@
+server:
+  port: 9000
+app:
+  context: /api
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  application:
+    name: menuRoot

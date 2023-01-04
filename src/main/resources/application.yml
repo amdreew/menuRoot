@@ -1,0 +1,29 @@
+server:
+  port: 9000
+app:
+  context: /api
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  application:
+    name: menuRoot
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  pattern:
+    console: "%d %-5i indelevel %logger : %msg%n"
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
